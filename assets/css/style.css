@@ -21,9 +21,10 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    //max-width: 1400px;//
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 30px;
+
 }
 
 h1, h2, h3 {
@@ -325,6 +326,7 @@ header nav ul li a:hover::after {
 .project-description {
     flex: 2; /* Takes more space than images */
     min-width: 300px; /* Minimum width before wrapping */
+    margin-bottom: 30px;
 }
 
 .project-description h4 {
