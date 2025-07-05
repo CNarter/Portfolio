@@ -2,9 +2,9 @@
 :root {
     --primary-color: #3498db; /* A nice blue */
     --secondary-color: #2c3e50; /* Dark blue/grey for text */
-    --accent-color: #e74c3c; /* Red for highlights */
+    --accent-color: #ff9800; /* Orange for highlights */
     --light-bg: #f4f7f6; /* Light background for sections */
-    --dark-bg: #333; /* Dark background for footer/contact */
+    --dark-bg: #2c3e50; /* Dark background for footer/contact */
     --text-light: #ecf0f1; /* Light text on dark backgrounds */
     --border-color: #ddd;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Maximum width for the main content */
+    max-width: 100%; /* Maximum width for the main content */
     margin: 0 auto;
     padding: 30px;
 
@@ -65,7 +65,7 @@ a:hover {
 
 .btn {
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: #fff;
     padding: 12px 25px;
     border-radius: 5px;
@@ -76,7 +76,8 @@ a:hover {
 }
 
 .btn:hover {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
+    color: #fff; /* Keep white text on hover */
     transform: translateY(-2px);
 }
 
@@ -160,15 +161,15 @@ header nav ul li a:hover::after {
 /* Hero/About Section */
 .hero {
     background-color: #fff;
-    padding: 80px 0;
-    text-align: center;
+    padding: 40px 0;
+    text-align: left;
 }
 
 .hero-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    justify-content: center ;
+    gap: 30px;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
@@ -227,7 +228,7 @@ margin-right: auto;
 
 .social-links a {
     font-size: 1.8em;
-    color: var(--secondary-color);
+    color: var(--accent-color);
     transition: color 0.3s ease;
 }
 
@@ -238,7 +239,7 @@ margin-right: auto;
 
 /* Section Styling */
 .section-padded {
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 .bg-light {
@@ -267,6 +268,7 @@ margin-right: auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 40px;
+    background-color:var(--accent-color);
 }
 
 .course-item {
